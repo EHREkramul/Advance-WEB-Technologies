@@ -3,7 +3,7 @@
 // let, const
 let name = 'Jhon';
 // let name = 'Alex'; // Error
-name = 'Doe';
+name = 1234; // can be assign different type of value
 console.log("Let variable: ", name);
 
 const age = 30;
@@ -12,16 +12,17 @@ console.log("Const variable: ", age);
 
 // Block Scope
 let fullName = 'Jhon Doe';
+const age1 = 30;
 if (true) {
     let fullName = 'Alex Doe'; // re-declared. It's a new variable. only available inside block
-    console.log("Inside block fullName re-declared value: ", fullName);
+    const age1 = 32; // re-declared. It's a new variable. only available inside block
+    console.log("Inside block fullName re-declared value: ", fullName, " Age: ", age1);
 }
 console.log("Outside block fullName: ", fullName);
 
 
 let poorCountry = ['Bangladesh', 'Nepal','Bhutan'];
 let richCountry = ['USA', 'UK', 'Canada'];
-
 let allCountry = [...poorCountry, ...richCountry];
 console.log("Marged array using spreed operator(...): ",allCountry);
 
@@ -40,3 +41,10 @@ function calculation(/*a,b,*/...numbers){ // use others parameter before rest. I
 }
 
 console.log("Rest parameter: ", calculation(1,2,3,4,5,6,7,8,9,10));
+
+// Dynamic function
+let dynamicFunction = function(a,b){
+    return a+b;
+}
+
+console.log("Dynamic function: ", dynamicFunction(5,3));
