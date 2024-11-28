@@ -1,6 +1,6 @@
 //////////////////////Conditional-Statements//////////////////////
 
-let person = {
+let person = { // Object declaration.
     age: 30, 
     name: "John Wick", 
     height: {
@@ -32,3 +32,6 @@ let person = {
         default:
             console.log("Switch case: ", person.name, " is not Eighteen or thirty");
     }
+
+    // ternary operator (condition ? true : false)
+    person.age > 18 ? console.log("Ternary operator: ", person.name, " is adult") : console.log("Ternary operator: ", person.name, " is not adult");

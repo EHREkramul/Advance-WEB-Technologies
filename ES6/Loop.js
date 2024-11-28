@@ -1,6 +1,6 @@
 //////////////////////Loop//////////////////////
     // for loop
-    for (let i = 0; i < 5; i++) {
+    for (let i = 1; i <= 5; i++) {
         console.log("For loop: ", i); 
     }
         // for of loop
@@ -15,7 +15,7 @@
     
     const obj = { a: 1, b: 2, c: 3 };
     for (const key in obj) {
-        console.log(`for in loop -- ${key}: ${obj[key]}`); // access property in object
+        console.log(`for in loop in object -- ${key}: ${obj[key]}`); // access property in object
         // Output:
         // a: 1
         // b: 2
