@@ -5,3 +5,6 @@ NestJs/
 
 # Ignore node_modules folder inside NodeJs/Third-Party-Module/Axio
 NodeJs/Third-Party-Module/Axio/node_modules
+
+# Ignore all js files inside TypeScript folder
+TypeScript/*.js
