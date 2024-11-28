@@ -1,0 +1,7 @@
+#"git status --ignored" will show what will be ignored by this file
+
+# Ignore NestJs folder
+NestJs/
+
+# Ignore node_modules folder inside NodeJs/Third-Party-Module/Axio
+NodeJs/Third-Party-Module/Axio/node_modules
