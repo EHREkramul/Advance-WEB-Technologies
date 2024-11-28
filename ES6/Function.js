@@ -18,7 +18,7 @@ function add(a, b) {
 }
 console.log('Function with return value: ', add(5, 3));
 
-// Arrow Function
+// Arrow Function (If the function body has only one expression, the result is returned implicitly without needing the return keyword.)
 let arrowFunction = (a, b) => a + b;
 console.log('Arrow Function: ', arrowFunction(5, 3));
 
@@ -62,4 +62,4 @@ console.log('Dynamic function: ', dynamicFunction(5, 3));
 function defaultParameter(a, b = 2) { // use 2 as default value of b, if no value pass for b
     return a + b;
 }
-console.log('Function with default parameter: ', defaultParameter(5));
+console.log('Function with default parameter: ', defaultParameter(5)); // 7
