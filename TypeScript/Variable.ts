@@ -1,6 +1,4 @@
-/////////////////Basic TypeScript/////////////////
-
-// 1. Basic variable types and declarations.
+// Basic variable types and declarations.
 
 // Boolean
 let isDone: boolean = false; // Boolean: true or false
@@ -14,26 +12,6 @@ let octal: number = 0o744; // Octal: 0o prefix
 // String
 let color: string = "blue"; // String: All text values
 color = 'red'; // Single quotes or double quotes
-
-// Enum
-enum Color {
-  Red,
-  Green,
-  Blue
-}; // Enum: Set of numeric values
-let c: Color = Color.Green;
-
-// Any
-let notSure: any = 4; // Any: Any value
-notSure = "maybe a string instead"; // OK
-notSure = false; // OK
-
-// Void
-function warnUser(): void { // Void: Absence of having any type at all
-    console.log("This is my warning message");
-}
-
-warnUser();
 
 // Null and Undefined
 let u: undefined = undefined; // Undefined: variable has not been assigned a value
