@@ -15,15 +15,6 @@ let octal: number = 0o744; // Octal: 0o prefix
 let color: string = "blue"; // String: All text values
 color = 'red'; // Single quotes or double quotes
 
-// Array
-let list: number[] = [1, 2, 3]; // Array: Type[] or Array<Type>
-let list2: Array<number> = [1, 2, 3]; // Array: Type[] or Array<Type>
-
-// Tuple
-let x: [string, number]; // Tuple: Array with fixed number of elements whose types are known
-x = ["hello", 10]; // OK
-// x = [10, "hello"]; // Error
-
 // Enum
 enum Color {
   Red,
